@@ -1,0 +1,37 @@
+
+@startuml mascota
+
+class Mascota{  
+
+- salud : int Salud 
++ Comer()
+
+}
+
+class Comer
+class NivHambre
+class Jugar
+class NivEnergia
+class Aseo
+class NivSuciedad
+class NivSueno
+class Dormir
+class Ejecicio
+class Felicidad
+class Estres
+class Alimento
+class Juguete
+class 
+
+
+
+// Relaciones
+
+Mascota o-- Alimento
+Alimento *-- NivHamb
+
+
+
+
+
+@enduml 
