@@ -2,13 +2,17 @@
 using namespace std;
 #include<Mascota.hpp>
 #include <Alimento.hpp>
+#include <Dibujo.hpp>
+
 
 // namespace name
 
 
 int main(int argc, char const *argv[])
 {
-Alimento alimento
+
+    Dibujo dibujo("./assets/Mascota.txt");
+    Alimento alimento;
     Mascota m1;
     Mascota m2;
     Mascota m3;
