@@ -1,8 +1,8 @@
 #pragma once
-#include <mascota.txt>
 #include <fstream>
+#include <iostream>
 #include <string>
-
+using namespace std;
 class Dibujo
 
 {
@@ -10,8 +10,13 @@ class Dibujo
         fstream file;
 
     public:
+    Dibujo(){}
         Dibujo(string path){
-            file.open("./assets/Mascota.txt");
+            file.open(path);
+            if (!file.is_open()){
+                cerr << "Error al abrir el archivo" << endl;
+            
+            }
 
 
         }
@@ -23,7 +28,7 @@ class Dibujo
         void Dibujar(){
 
             string linea;
-            while (getline(file >> linea)){
+            while (getline(file, linea)){
 
                 cout << linea <<endl;
             }
